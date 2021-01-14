@@ -1,8 +1,8 @@
 # Preventing macOS AppNap
 
-On macOS, [AppNap][apple-doc] is a mechanism of reducing the energy consumption of apps by suspending them if the user is not interacting with an app.
+On macOS, [AppNap][apple-docs] is a mechanism of reducing the energy consumption of apps by suspending them if the user is not interacting with an app.
 
-As a concrete example, when running the [druid timer example][druid-timer] with some debug output added around [the timer event][druid-time-line], you'll notice that the output slows down significantly after about a minute if the application windows is in the background an completely invisible / covered by other windows.
+As a concrete example, when running the [druid timer example][druid-timer] with some debug output added around [the timer event][druid-timer-line], you'll notice that the output slows down significantly after about a minute if the application windows is in the background an completely invisible / covered by other windows.
 
 To prevent this, e.g. if you're doing processing in the background and are relying on the timer, you can use this crate. Currently it only supports disabling App Nap entirely for the applications. More granular control is likely possible and desirable, and may be added in the future (pull requests welcome!).
 
