@@ -1,0 +1,22 @@
+[package]
+name = "macos-app-nap"
+description = "Control App Nap on macOS systems"
+repository = "https://github.com/next-slide-please/macos-app-nap"
+version = "0.0.1"
+authors = ["Lucas Jenß"]
+edition = "2018"
+license = "MIT"
+build = "build.rs"
+categories = ["os::macos-apis"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+objc = "0.2"
+cocoa-foundation = "0.1"
+
+[build-dependencies]
+cc = "1.0"
+
+[package.metadata.docs.rs]
+default-target = "x86_64-apple-darwin"
